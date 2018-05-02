@@ -1,0 +1,9 @@
+<div class="header__container">
+  <h1>W7 D3 Daily</h1>
+</div>
+<div class="movies__container" >
+  <div class="movies__inner" *ngFor="let movie of homeMovies" (click)='console.log("hello")'>
+      <a [routerLink]="['/movie',movie.id]"><h3>Room: {{movie.room}}</h3></a>
+     <img [src]="movie.poster" alt="">
+  </div>
+</div>
