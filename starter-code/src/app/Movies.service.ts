@@ -15,7 +15,6 @@ export interface Movie {
         room: Number;
 }
 
-
 @Injectable()
 export class MoviesService {
     movies: Array<Movie> = movies;
@@ -27,7 +26,7 @@ constructor() { }
     };
     getMovie(id) {
         this.movies.forEach( (e) => {
-           if (e.id === id) {
+           if (e.id == id) {
                return e;
            }
         });
